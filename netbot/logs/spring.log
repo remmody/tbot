@@ -1,0 +1,96 @@
+2020-06-04 17:47:02.539  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"voiceUpdate","guildId":"712317579980439693","sessionId":"b73633557970d73e0dad42fd04a80e0f","event":{"token":"139226b9e0ded60c","guild_id":712317579980439693,"endpoint":"russia471.discord.media:80"}}
+2020-06-04 17:47:17.981  INFO 6870 --- [XNIO-1 task-4] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-06-04 17:47:18.595  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: assclap gachi
+2020-06-04 17:47:18.617  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"play","guildId":"712317579980439693","track":"QAAAjQIALuKZgu+4jyBBc3NDbGFwIOKZgu+4jyAoUmlnaHQgdmVyc2lvbikgUkVVUExPQUQABWZsb3hfAAAAAAACcQAAC05kcWJJMF8wR3NNAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9TmRxYkkwXzBHc00AB3lvdXR1YmUAAAAAAAAAAA==","startTime":0,"noReplace":false}
+2020-06-04 17:47:19.399 ERROR 6870 --- [lava-daemon-pool-playback-5-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of NdqbI0_0GsM
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:103) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349) ~[lavaplayer-1.3.32.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.net.URI$Parser.parse(URI.java:3104) ~[na:na]
+	at java.base/java.net.URI.<init>(URI.java:600) ~[na:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeTrackFormat.getUrl(YoutubeTrackFormat.java:66) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.resolveFormatUrl(YoutubeSignatureCipherManager.java:97) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:81) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:42) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:91) ~[lavaplayer-1.3.32.jar!/:na]
+	... 4 common frames omitted
+
+2020-06-04 17:47:19.465  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"712317579980439693"}
+2020-06-04 17:57:31.373  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:42482 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key 865ed508-082e-4359-9f1b-e0c52718c432
+2020-06-04 17:57:36.013  INFO 6870 --- [XNIO-1 task-6] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:45250
+2020-06-04 17:57:36.027  INFO 6870 --- [XNIO-1 task-6] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2020-06-04 17:57:36.048  INFO 6870 --- [XNIO-1 task-6] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:45250
+2020-06-04 17:57:36.054  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"configureResuming","key":"7004458a-b6a1-4db4-96b1-178433fdaecc","timeout":60}
+2020-06-04 17:58:31.392  INFO 6870 --- [pool-3-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2020-06-04 17:58:31.394  INFO 6870 --- [pool-3-thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2020-06-04 17:59:40.739  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:45250 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key 7004458a-b6a1-4db4-96b1-178433fdaecc
+2020-06-04 17:59:44.971  INFO 6870 --- [XNIO-1 task-7] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:45282
+2020-06-04 17:59:44.982  INFO 6870 --- [XNIO-1 task-7] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2020-06-04 17:59:44.993  INFO 6870 --- [XNIO-1 task-7] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:45282
+2020-06-04 17:59:44.994  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"configureResuming","key":"4c0af216-d6e6-488e-a4e2-a7216716daa8","timeout":60}
+2020-06-04 18:00:40.740  INFO 6870 --- [pool-6-thread-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2020-06-04 18:00:40.741  INFO 6870 --- [pool-6-thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2020-06-04 19:23:21.708  INFO 6870 --- [XNIO-1 task-8] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-06-04 19:23:21.752  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] c.s.d.l.s.s.SoundCloudClientIdTracker    : Updating SoundCloud client ID (current is null).
+2020-06-04 19:23:22.115  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] c.s.d.l.s.s.SoundCloudClientIdTracker    : Updating SoundCloud client ID succeeded, new ID is aybGMKN6zsjDmDCOGHLx6POpkd9naasI.
+2020-06-04 19:23:22.355  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: gachi кожанный трактор
+2020-06-04 19:23:34.825  INFO 6870 --- [XNIO-1 task-10] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-06-04 19:23:35.217  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded playlist Search results for: amv naruto
+2020-06-04 19:23:35.295  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"play","guildId":"712317579980439693","track":"QAABDQIAJk5hcnV0byBTaGlwcHVkZW4gW0FNVl0gLSBDb3VydGVzeSBDYWxsABPjgJBTVEVWReOAkUF5ZSBTaXIhAAAAAAAFUL0AcU86aHR0cHM6Ly9hcGktdjIuc291bmRjbG91ZC5jb20vbWVkaWEvc291bmRjbG91ZDp0cmFja3M6MjA1NjI0NjExLzliY2E2MjFmLWMwYTktNGJiYS1iZjM5LTM5MWM3NGI2ZmI2My9zdHJlYW0vaGxzAAEAPGh0dHBzOi8vc291bmRjbG91ZC5jb20vc3QzdjNkZS9uYXJ1dG8tc2hpcHB1ZGVuLWFtdi1jb3VydGVzeQAKc291bmRjbG91ZAAAAAAAAAAA","startTime":0,"noReplace":false}
+2020-06-04 19:23:35.309  INFO 6870 --- [lava-daemon-pool-playback-13-thread-1] c.s.d.l.s.s.SoundCloudClientIdTracker    : Updating SoundCloud client ID (current is null).
+2020-06-04 19:23:35.523  INFO 6870 --- [lava-daemon-pool-playback-13-thread-1] c.s.d.l.s.s.SoundCloudClientIdTracker    : Updating SoundCloud client ID succeeded, new ID is aybGMKN6zsjDmDCOGHLx6POpkd9naasI.
+2020-06-04 19:23:35.875  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"voiceUpdate","guildId":"712317579980439693","sessionId":"542f19f9161ed1ebbbc02e359f93be1d","event":{"token":"00e2c700a4f42571","guild_id":712317579980439693,"endpoint":"russia471.discord.media:80"}}
+2020-06-04 19:23:47.601  INFO 6870 --- [XNIO-1 task-12] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-06-04 19:23:48.426  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track СЕРЕГА ПИРАТ - И я кричу, остановите катку
+2020-06-04 19:23:54.841  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"play","guildId":"712317579980439693","track":"QAAAvAIAS9Ch0JXQoNCV0JPQkCDQn9CY0KDQkNCiIC0g0Jgg0Y8g0LrRgNC40YfRgywg0L7RgdGC0LDQvdC+0LLQuNGC0LUg0LrQsNGC0LrRgwAX0KHQldCg0JXQk9CQINCf0JjQoNCQ0KIAAAAAAAN+iAALa3RQM1RvcTZVM0kAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1rdFAzVG9xNlUzSQAHeW91dHViZQAAAAAAAAAA","startTime":0,"noReplace":false}
+2020-06-04 19:23:55.654 ERROR 6870 --- [lava-daemon-pool-playback-13-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of ktP3Toq6U3I
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:103) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349) ~[lavaplayer-1.3.32.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.net.URI$Parser.parse(URI.java:3104) ~[na:na]
+	at java.base/java.net.URI.<init>(URI.java:600) ~[na:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeTrackFormat.getUrl(YoutubeTrackFormat.java:66) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.resolveFormatUrl(YoutubeSignatureCipherManager.java:97) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:81) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:42) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:91) ~[lavaplayer-1.3.32.jar!/:na]
+	... 4 common frames omitted
+
+2020-06-04 19:23:55.797  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"712317579980439693"}
+2020-06-04 19:23:55.810  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"712317579980439693"}
+2020-06-04 19:24:04.512  INFO 6870 --- [XNIO-1 task-14] l.server.player.AudioLoaderRestHandler   : GET /loadtracks
+2020-06-04 19:24:05.765  INFO 6870 --- [lava-daemon-pool-info-loader-2-thread-1] lavalink.server.player.AudioLoader       : Loaded track СЕРЕГА ПИРАТ - И я кричу, остановите катку
+2020-06-04 19:24:05.773  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"play","guildId":"712317579980439693","track":"QAAAvAIAS9Ch0JXQoNCV0JPQkCDQn9CY0KDQkNCiIC0g0Jgg0Y8g0LrRgNC40YfRgywg0L7RgdGC0LDQvdC+0LLQuNGC0LUg0LrQsNGC0LrRgwAX0KHQldCg0JXQk9CQINCf0JjQoNCQ0KIAAAAAAAN+iAALa3RQM1RvcTZVM0kAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1rdFAzVG9xNlUzSQAHeW91dHViZQAAAAAAAAAA","startTime":0,"noReplace":false}
+2020-06-04 19:24:06.117  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"voiceUpdate","guildId":"712317579980439693","sessionId":"542f19f9161ed1ebbbc02e359f93be1d","event":{"token":"5d2b798d151ea25f","guild_id":712317579980439693,"endpoint":"russia471.discord.media:80"}}
+2020-06-04 19:24:07.062 ERROR 6870 --- [lava-daemon-pool-playback-13-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of ktP3Toq6U3I
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:43) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:103) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:349) ~[lavaplayer-1.3.32.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.lang.NullPointerException: null
+	at java.base/java.net.URI$Parser.parse(URI.java:3104) ~[na:na]
+	at java.base/java.net.URI.<init>(URI.java:600) ~[na:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeTrackFormat.getUrl(YoutubeTrackFormat.java:66) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeSignatureCipherManager.resolveFormatUrl(YoutubeSignatureCipherManager.java:97) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:81) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:42) ~[lavaplayer-1.3.32.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:91) ~[lavaplayer-1.3.32.jar!/:na]
+	... 4 common frames omitted
+
+2020-06-04 19:24:07.199  INFO 6870 --- [XNIO-1 I/O-2] lavalink.server.io.SocketServer          : {"op":"destroy","guildId":"712317579980439693"}

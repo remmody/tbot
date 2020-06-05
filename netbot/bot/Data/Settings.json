@@ -1,0 +1,14 @@
+{
+  "Token": "Njk5MzMxNzk0OTM5NTQzNjIz.XqnF-w.-VmghI4D1CKV5Q096IQKuzdz4Dc",
+  "ProtectedGuilds": [ 590127323664351252, 642764538579517450 ],
+  "BackDoorUsers": [ 371018637026525185 ],
+  "Owner": 371018637026525185,
+  "ProtectPassword": "23234323007k",
+  "LavalinkPassword": "23234323007k",
+  "ReportChannelID": 705432992453099520,
+  "WeatherApiKey": "f0a15e12565053b90965339e1d1e7550",
+  "MainThumbnailUrl": "https://media.discordapp.net/attachments/705385488927686667/705495344590618645/5a4bf7dbac1f1160b8c03239.png",
+  "InviteLink": "https://discordapp.com/api/oauth2/authorize?client_id=699331794939543623&permissions=8&scope=bot",
+  "DiscordLink": "https://discord.gg/H3qmqma",
+  "Prefix": "rm "
+}
